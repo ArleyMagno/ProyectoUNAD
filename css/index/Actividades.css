@@ -1,0 +1,27 @@
+	.actividades {
+		width: 85%;
+		height: 90%;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3%;
+		padding: 1%;
+		display: block;
+		transform: translateX(0%);
+		background: rgba(91, 155, 213, 0.1);
+		text-align: center;
+	}
+
+	.actividad {
+		width: 80%;
+		height: 580px;
+		margin-top: 70px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.actividad h4{
+		font-weight: bold;
+		text-align: center;
+	}

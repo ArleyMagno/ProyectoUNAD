@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(Menu.css);
+@import url(Banner.css);
+
+*{
+	font-family: 'Open Sans', Arial, Times New Roman;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header{	
+	width: 100%;
+	height: 50px;
+	background: #5B9BD5;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+header h1{
+	font-family: 'Times New Roman';
+	float: left;
+	font-size: 45px;
+	font-weight: bold;
+	margin: 0;
+	color: #fff;
+}
+
+header #contenido{
+	display: table;
+}
+
+#contenido{
+	width: 98%;
+	margin: auto;
+}
+
+.mySlides {
+	display:none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+	cursor:pointer;
+}
+
+.w3-badge {
+	height:13px;
+	width:13px;
+	padding:0;
+}
+
+footer{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+footer a{
+	color: #000;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #5B9BD5;
+	text-decoration: none;
+}
+
+@media (min-height: 1024px){
+	#contenido {
+		width: 100%;
+	}	
+}
+
+@media (max-width: 480px){
+	header h1{
+		font-size: 37px;
+		margin-top: 7px;
+	}
+	footer{
+		font-size: 12px;
+	}
+	footer a{
+		display: block;
+	}
+}
+
+@media (max-width: 370px){
+	#letraCap{
+		display: none;
+	}
+}

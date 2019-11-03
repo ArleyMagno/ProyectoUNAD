@@ -1,0 +1,24 @@
+body{
+	font-family: Arial, Open Sans, Calibri, Tahoma;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+#construccion img{
+	margin-top: 30px;
+	width:80%;
+}
+
+footer{
+	font-size: 14px;
+}
+
+@media (max-width: 480px){
+	#construccion img{
+		margin-top: 40px;
+	}
+	footer{
+		font-size: 12px;
+	}
+}

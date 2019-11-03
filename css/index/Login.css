@@ -1,0 +1,103 @@
+/*CSS del Modal Login*/
+
+#modalLogin{
+	padding: 0px;
+	width: 240px;
+	height: auto;
+	margin: -5px; 
+	border: 2px solid rgba(91,155,213,0.9);
+	border-radius: 20px;
+	background: rgba(91,155,213,0.4);
+	font-size: 13px;
+	font-family: Open Sans, Calibri, Arial, Tahoma;
+	text-align: center;
+}
+
+#modalLogin img{
+	margin-left: 93px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	display: block;	
+	max-width: 75px;
+}
+
+#campoModal{
+	box-sizing: border-box;
+	width: 80%;
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 7px;
+	font-size: 13px;
+	border: none;
+	border-radius: 10px;
+}
+
+#botonIngresar{
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 45px;
+	background: #5B9BD5;
+	color:#fff;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	font-size: 14px;
+	font-family: Open Sans, Calibri, Arial, Tahoma;
+}
+
+#botonIngresar:hover{
+	cursor: pointer;
+	text-decoration: none;
+	background: rgba(91,155,213,0.6);
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+#loginAyuda1, #loginAyuda2, #loginAyuda3{
+	display: block;
+	color: #4472c4;
+	text-decoration: none;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Open Sans, Calibri, Tahoma;
+}
+
+#loginAyuda2{
+	margin-bottom: 15px;
+}
+
+#loginAyuda3{
+	text-align: center;
+	margin-top: 25px;
+}
+
+/*CSS de Login*/
+
+#later{
+	width: 250px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#labelLogin{
+	font-size: 15px;
+}
+
+.modal-body, .modal-content{
+	width: 262px;
+}
+
+@media (max-width: 1920px) {
+	.modal-body, .modal-content{
+		margin: auto;
+	}
+}

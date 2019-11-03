@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang= "es">
+
+<head>
+	<link rel="icon" href="img/ARL-UNAD.png">​
+	<link rel="stylesheet" href="css/index/Fontello.css">
+	<link rel="stylesheet" href="css/index/Index.css">
+	<link rel="stylesheet" href="css/index/Registro.css">
+	<link rel="stylesheet" href="css/index/Login.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>::Mi Proyecto UNAD:: | Registro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+
+<body>
+
+	<header>
+		<div class="contenedor">
+			<a href="Index.html"><h1 class="icon-laptop"> MI SITIO WEB</h1></a>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="Acerca_de_nosotros.html">Acerca de nosotros</a>
+				<a href="Lecturas.html">Lecturas</a>
+				<a href="Recursos.html">Recursos</a>
+				<a href="Actividades.html">Actividades</a>
+				<a href="Contacto.html">Contacto</a>
+				<a data-toggle="modal" href="#Login">Iniciar sesión</a>
+			</nav>	
+		</div>
+	</header>
+
+	<div id="registro">
+
+		<form action="reg/RegPersona.php" method="post"><!-- Datos de la Empresa (NIT, nombre, direccion, telefono, ciudad, correo, web)-->
+			
+			<h1 id="tituloRegistro">REGISTRO</h1>
+			<P>Los campos con <span>*</span> son obligatorios.</P>
+
+			<table id="tablaRegistro">
+
+				<tr>
+					<td><label id="labelRegistro">Tipo de documento de contacto: <span>*</span></label>				
+						<select type="text" name="tipoDoc" placeholder="" class="form-control" id="campos" required>
+				   			<option value="1">Cédula de Ciudadanía</option> 
+				   			<option value="2">Cédula de Extranjería</option> 
+				   			<option value="3">Pasaporte</option>
+				   			<option value="4">Documento Nacional de Identificación</option>
+						</select>
+					</td>
+					<td>
+						<label id="labelRegistro">No. de documento de contacto: <span>*</span></label>
+						<input type="text" name="numDoc" placeholder="" class="form-control" id="campos" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">Nombre(s) de contacto: <span>*</span></label>
+						<input type="text" name="nombrePersona" placeholder="" class="form-control" id="campos" required> 
+					</td>
+					<td>
+						<label id="labelRegistro">Apellido(s) de contacto: <span>*</span></label>
+						<input type="text" name="apellidoPersona" placeholder="" class="form-control" id="campos" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">Nombre de usuario:<span>*</span></label>
+						<input type="text" name="usuario" placeholder="" class="form-control" id="campos" required>
+					</td>
+					<td>
+						<label id="labelRegistro">Contraseña:<span>*</span></label>
+						<input type="password" name="clave" placeholder="" class="form-control" id="campos" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">Correo de contacto: <span>*</span></label>
+						<input type="email" name="correoContacto" placeholder="" class="form-control" id="campos" required>
+					</td>
+					<td>
+						<label id="labelRegistro">Correo alternativo de contacto:</label>
+						<input type="email" name="correoOpcional" placeholder="" class="form-control" id="campos">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">NIT de la empresa: <span>*</span></label>
+						<input type="number" name="nitEmpresa" placeholder="" class="form-control" id="campos" required>
+					</td>
+					<td>
+						<label id="labelRegistro">Nombre de la empresa: <span>*</span></label>
+						<input type="text" name="nombreEmpresa" placeholder="" class="form-control" id="campos" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">Razón social: <span>*</span></label>
+						<input type="text" name="razonSocialEmpresa" placeholder="" class="form-control" id="campos" required>
+					</td>
+					<td>
+						<label id="labelRegistro">Dirección de la empresa: <span>*</span></label>
+						<input type="text" name="direccionEmpresa" placeholder="" class="form-control" id="campos" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label id="labelRegistro">Teléfono de la empresa: <span>*</span></label>
+						<input type="number" name="telefonoEmpresa" placeholder="" class="form-control" id="campos" required>
+					</td>
+					<td>
+						<label id="labelRegistro">Correo de la empresa: </label>
+						<input type="email" name="correoEmpresa" placeholder="" class="form-control" id="campos">
+					</td>
+				</tr>
+		
+			</table>
+
+			<input type="submit" value="Registrarme" id="botonRegistro">
+
+		</form>
+
+	</div>
+
+<!-- Modal -->
+	<div class="modal fade" id="Login" role="dialog">
+
+	    <div class="modal-dialog modal-sm">    
+	      
+	      	<div class="modal-content"><!-- Contenido del Modal -->
+	        
+	        	<div class="modal-body">
+	        		
+					<form action="user/login/validarLogin.php" method="post" id="modalLogin">
+
+						<div id="datosModalLogin">
+
+							<img src="img/Logo.png">
+							
+							<label>NIT de su empresa:</label>
+							<input type="text" name="nitEmpresa" placeholder="" class="form-control" id="campoModal" required>
+							
+							<label>Nombre de usuario:</label>
+							<input type="text" name="usuario" placeholder="" class="form-control" id="campoModal" required> 
+							
+							<label>Contraseña:</label>
+							<input type="password" name="clave" placeholder="" class="form-control" id="campoModal" required>
+						
+							<input type="submit" name="submit" value="Ingresar" id="botonIngresar">
+
+							<?php echo $message_out; ?>
+
+							<a href="#" id="loginAyuda1">¿Olvidaste tus datos de acceso?</a>
+							<a href="#" id="loginAyuda2">¿Mi usuario está Bloqueado o Inactivo?</a>
+
+						</div>
+
+					</form>
+
+	        	</div>
+	    
+	    	</div>
+	      
+	    </div>
+
+  	</div>
+
+</body>
+
+</html>

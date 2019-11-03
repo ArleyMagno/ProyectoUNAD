@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang= "es">
+
+<head>
+	<link rel="icon" href="img/ARL-UNAD.png">​
+	<link rel="stylesheet" href="css/index/Fontello.css">
+	<link rel="stylesheet" href="css/index/Index.css">
+	<link rel="stylesheet" href="css/index/Login.css">
+	<link rel="stylesheet" href="css/index/Lecturas.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>::Mi Proyecto UNAD:: | Lecturas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+
+<body>
+
+	<header>
+
+		<div id="contenido">
+			<a href="Index.html"><h1 class="icon-laptop" id="letraCap"> MI SITIO WEB</h1></a>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="Acerca_de_nosotros.html">Acerca de nosotros</a>
+				<a href="Recursos.html">Recursos</a>
+				<a href="Actividades.html">Actividades</a>
+				<a href="Contacto.html">Contacto</a>
+				<a href="Registro.html">Registro</a>
+				<a data-toggle="modal" href="#Login">Iniciar sesión</a>
+			</nav>
+		</div>
+
+	</header>
+
+	<section>
+
+		<div class="lecturas">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>
+							<a href="lecturas/Lectura01.html">
+								<img src="img/PDF.png" alt="Lectura01" width="3%">  Syllabus del Curso Diseños de Sitios Web
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="lecturas/Lectura02.html">
+								<img src="img/PDF.png" alt="Lectura02" width="3%">  Guía de actividades y rúbrica de evaluación - Fase 1
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="lecturas/Lectura03.html">
+								<img src="img/PDF.png" alt="Lectura03" width="3%">  Solución a la guía de actividades y rúbrica de evaluación - Fase 1
+							</a>
+						</td>
+					</tr>
+										<tr>
+						<td>
+							<a href="lecturas/Lectura04.html">
+								<img src="img/PDF.png" alt="Lectura04" width="3%">  Guía de actividades y rúbrica de evaluación - Fase 2
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="lecturas/Lectura05.html">
+								<img src="img/PDF.png" alt="Lectura05" width="3%">  Solución a la guía de actividades y rúbrica de evaluación - Fase 2
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="lecturas/Lectura06.html">
+								<img src="img/PDF.png" alt="Lectura06" width="3%">  Guía de actividades y rúbrica de evaluación - Fase 3
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="Login" role="dialog">
+
+		<div class="modal-dialog modal-sm">    
+
+			<div class="modal-content"><!-- Contenido del Modal -->
+
+				<div class="modal-body">
+
+					<form action="user/login/validarLogin.php" method="post" id="modalLogin">
+
+						<div id="datosModalLogin">
+
+							<img src="img/Logo.png">
+							
+							<label>NIT de su empresa:</label>
+							<input type="text" name="nitEmpresa" placeholder="" class="form-control" id="campoModal" required>
+							
+							<label>Nombre de usuario:</label>
+							<input type="text" name="usuario" placeholder="" class="form-control" id="campoModal" required> 
+							
+							<label>Contraseña:</label>
+							<input type="password" name="clave" placeholder="" class="form-control" id="campoModal" required>
+
+							<input type="submit" name="submit" value="Ingresar" id="botonIngresar">
+
+							<?php echo $message_out; ?>
+
+							<a href="#" id="loginAyuda1">¿Olvidaste tus datos de acceso?</a>
+							<a href="#" id="loginAyuda2">¿Mi usuario está Bloqueado o Inactivo?</a>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>

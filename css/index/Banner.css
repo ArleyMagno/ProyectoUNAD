@@ -1,0 +1,46 @@
+#banner{
+	margin-top: 70px;
+	margin-bottom: 25px;
+}
+
+#banner img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;	
+	width: 55%;
+}
+
+#redes{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#redes img{
+	display: inline-block;
+	max-height: 32px;	
+}
+
+#redes img:hover{
+	border: solid 3px #5b9bd5;
+	border-radius: 7px;
+	cursor: pointer;
+	text-decoration: none;
+	opacity: 0.8;	
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;	
+}
+
+@media (max-width: 960px){
+	#banner{
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	#banner img{
+		width: 100%;
+	}
+	#redes{
+		margin-top: 20px;
+	}
+}
