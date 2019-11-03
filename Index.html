@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang= "es">
+
+<head>
+	<link rel="icon" href="img/ARL-UNAD.png">​
+	<link rel="stylesheet" href="css/index/Fontello.css">
+	<link rel="stylesheet" href="css/index/Index.css">
+	<link rel="stylesheet" href="css/index/Login.css">
+	<link rel="stylesheet" href="css/index/Laterales.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>::Mi Proyecto UNAD::</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+
+<body>
+
+	<header>
+
+		<div id="contenido">
+			<h1 class="icon-laptop" id="letraCap"> MI SITIO WEB</h1>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="Acerca_de_nosotros.html">Acerca de nosotros</a>
+				<a href="Lecturas.html">Lecturas</a>
+				<a href="Recursos.html">Recursos</a>
+				<a href="Actividades.html">Actividades</a>
+				<a href="Contacto.html">Contacto</a>
+				<a href="Registro.html">Registro</a>
+				<a data-toggle="modal" href="#Login">Iniciar sesión</a>
+			</nav>
+		</div>
+
+	</header>
+
+	<main>
+
+
+		<div id="sidebar" class="sidebar">
+			<a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+			<ul class="menu">
+				<div><a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+			</ul>
+		</div>
+
+		<div id="contenidoLat">
+			<a id="abrir" class="fa fa-twitter" href="javascript:void(0)" onclick="mostrar()"></a><a id="cerrar" class="fa fa-twitter" href="#" onclick="ocultar()">  </a>
+			<a id="abrirFace" class="fa fa-facebook" href="#" onclick=""></a><a id="cerrarFace" class="fa fa-facebook" href="#" onclick="">  </a>
+			<a id="abrirYt" class="fa fa-youtube" href="#" onclick=""></a><a id="cerrarYt" class="fa fa-youtube" href="#" onclick="">  </a>
+		</div>
+
+		<script>
+			function mostrar() {
+				document.getElementById("sidebar").style.width = "300px";
+				document.getElementById("contenido").style.marginLeft = "300px";
+				document.getElementById("abrir").style.display = "none";
+				document.getElementById("cerrar").style.display = "inline";
+			}
+
+			function ocultar() {
+				document.getElementById("sidebar").style.width = "0";
+				document.getElementById("contenido").style.marginLeft = "0";
+				document.getElementById("abrir").style.display = "block";
+			}
+		</script>
+
+
+		<div id="sfc5ujfbrx3c3jct4ljbjxjepawm1xjxrf4"></div><script type="text/javascript" src="https://counter10.wheredoyoucomefrom.ovh/private/counter.js?c=5ujfbrx3c3jct4ljbjxjepawm1xjxrf4&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador para blogger"><img src="https://counter10.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=5ujfbrx3c3jct4ljbjxjepawm1xjxrf4" border="0" title="contador para blogger" alt="contador para blogger"></a></noscript>
+
+		<div id="comslider_in_point_1949456" style="max-width: 800px; margin: auto; padding-top: 2%;"></div>
+		<script type="text/javascript">
+			var oCOMScript1949456=document.createElement('script');
+			oCOMScript1949456.src="comslider1949456/comsliderd.js?timestamp=1572672089";
+			oCOMScript1949456.type='text/javascript';
+			document.getElementsByTagName("head").item(0).appendChild(oCOMScript1949456);
+		</script>
+
+
+	</main>
+
+	<footer>
+		<div>
+			<p>Copyright &copy; 2019 &middot; Todos los derechos reservados &middot; <a href="Index.html">Diseño de sitios web</a></p>
+		</div>	
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="Login" role="dialog">
+
+		<div class="modal-dialog modal-sm">    
+
+			<div class="modal-content"><!-- Contenido del Modal -->
+
+				<div class="modal-body">
+
+					<form action="user/login/validarLogin.php" method="post" id="modalLogin">
+
+						<div id="datosModalLogin">
+
+							<img src="img/Logo.png">
+
+							<label>NIT de su empresa:</label>
+							<input type="text" name="nitEmpresa" placeholder="" class="form-control" id="campoModal" required>
+
+							<label>Nombre de usuario:</label>
+							<input type="text" name="usuario" placeholder="" class="form-control" id="campoModal" required> 
+
+							<label>Contraseña:</label>
+							<input type="password" name="clave" placeholder="" class="form-control" id="campoModal" required>
+
+							<input type="submit" name="submit" value="Ingresar" id="botonIngresar">
+
+							<?php echo $message_out; ?>
+
+							<a href="#" id="loginAyuda1">¿Olvidaste tus datos de acceso?</a>
+							<a href="#" id="loginAyuda2">¿Mi usuario está Bloqueado o Inactivo?</a>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
